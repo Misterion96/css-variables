@@ -1,0 +1,36 @@
+@use "../styles/scss-vars/variables";
+@use "sass:map";
+
+:host {
+  & > * {
+    margin-top: 12px;
+  }
+
+  --external-lib-primary: var(--primary);
+  --external-lib-secondary: var(--secondary);
+
+  .dashboard-item {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #c3c3c3;
+  }
+}
+
+
+//@each $theme-key in map.keys(variables.$themes) {
+//  $theme: map.get(variables.$themes, $theme-key);
+//
+//  :host-context([data-theme="#{$theme-key}"]){
+//    ::ng-deep {
+//      app-external-component {
+//        .header {
+//          color: map.get($theme, "primary");
+//        }
+//
+//        .description {
+//          color: map.get($theme, "secondary");
+//        }
+//      }
+//    }
+//  }
+//}

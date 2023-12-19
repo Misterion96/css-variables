@@ -1,0 +1,40 @@
+:root {
+  [data-theme="default"] {
+    --primary: #d75894;
+    --secondary: #9b3dca;
+    --background: #fafafa;
+
+    --chart-color-1: #526ed3;
+    --chart-color-2: #ea97c4;
+    --chart-color-3: #fee797;
+
+    --base-1: #808080;
+    --base-2: #bebebe;
+  }
+
+  [data-theme="dark"] {
+    --primary: #5e84ff;
+    --secondary: #0dd0ff;
+    --background: #1b1918;
+
+    --chart-color-1: #ffce56;
+    --chart-color-2: #36a2eb;
+    --chart-color-3: #ff6384;
+
+    --base-1: #c7c7c7;
+    --base-2: #bcbcbc;
+  }
+
+  [data-theme="new-theme"] {
+    --primary: #eced00;
+    --secondary: #cfbe00;
+    --background: #001257;
+
+    --chart-color-1: #ff0000;
+    --chart-color-2: #ff5151;
+    --chart-color-3: #ff8b8b;
+
+    --base-1: #c7c7c7;
+    --base-2: #bcbcbc;
+  }
+}

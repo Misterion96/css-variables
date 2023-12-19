@@ -1,0 +1,29 @@
+:host {
+  display: block;
+  padding: 8px 12px;
+  outline: 1px solid #b7b7b7;
+
+  .header {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--external-lib-primary, red);
+  }
+
+  .description {
+    font-size: 14px;
+    color: var(--external-lib-secondary, blue);
+  }
+
+  //.header {
+  //  font-size: 18px;
+  //  font-weight: bold;
+  //  color: red;
+  //}
+  //
+  //.description {
+  //  font-size: 14px;
+  //  color: blue;
+  //}
+}
+
+

@@ -1,0 +1,34 @@
+@use "variables";
+@use "sass:map";
+
+//body {
+//  background: variables.$background;
+//
+//  h1 {
+//    color: variables.$primary;
+//  }
+//
+//  p {
+//    color: variables.$secondary;
+//  }
+//}
+
+@mixin setTheme($theme-map) {
+  background: map.get($theme-map, "background");
+
+  h1 {
+    color: map.get($theme-map, "primary")
+  }
+
+  p {
+    color: map.get($theme-map, "secondary")
+  }
+}
+
+body {
+  @each $theme-key in map.keys(variables.$themes) {
+    &[data-theme="#{$theme-key}"]{
+        @include setTheme(map.get(variables.$themes, $theme-key))
+    }
+  }
+}
